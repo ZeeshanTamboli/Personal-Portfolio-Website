@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Website</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="main-header">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-md-5 col-sm-12">
+                    <img src="img/myself.jpg">
+                </div>
+                <div class="col-lg-8 col-md-7 col-sm-12">
+                    <div class="d-flex flex-column">
+                        <div class="p-5 bg-dark text-white">
+                            <div class="name d-flex flex-row justify-content-between align-items-center">
+                                <h1 id="123" class="display-4">Zeeshan Tamboli</h1>
+                                <div>
+                                    <a href="https://github.com/ZeeshanTamboli" target="_blank">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/zeeshantamboli/" target="_blank">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://angel.co/zeeshan-javed-tamboli?public_profile=1" target="_blank">
+                                        <i class="fa fa-angellist"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.quora.com/profile/Zeeshan-Tamboli" target="_blank">
+                                        <i class="fa fa-quora"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 description">
+                            Back End Developer. Specialized in NodeJS.
+                        </div>
+
+                        <div>
+                            <div class="d-flex flex-row text-white align-items-stretch text-center">
+                                <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
+                                    <i class="fa fa-home d-block"></i> Home
+                                </div>
+                                <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
+                                    <i class="fa fa-graduation-cap d-block"></i> Resume
+                                </div>
+                                <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
+                                    <i class="fa fa-folder-open d-block"></i> Work
+                                </div>
+                                <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
+                                    <i class="fa fa-envelope d-block"></i> Contact
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- HOME -->
+
+        <!-- RESUME -->
+
+        <!-- WORK -->
+
+        <!-- CONTACT -->
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(window).on('resize', function () {
+            const win = $(this);
+            if (win.width() < 768) {
+
+                $('#123').removeClass('display-4').addClass('display-5');
+
+            } else {
+                $('#123').removeClass('display-5').addClass('display-4');
+            }
+        });
+    </script>
+</body>
+
+</html>

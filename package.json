@@ -1,0 +1,20 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My peronal website built using Bootstrap 4 and NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Zeeshan Tamboli",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
