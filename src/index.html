@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
     <link rel="stylesheet" href="css/style.css">
-    <title>My Website</title>
+    <title>Zeeshan Tamboli</title>
 </head>
 
 <body>
@@ -46,7 +48,7 @@
                         </div>
 
                         <div class="p-4 description">
-                            Back End Developer. Specialized in NodeJS.
+                            Back End Developer. Expert in NodeJS.
                         </div>
 
                         <div>
@@ -71,18 +73,239 @@
         </header>
 
         <!-- HOME -->
+        <div id="home" class="collapse show">
+            <div class="card card-body bg-primary text-white py-5">
+                <h2>Welcome to My Page</h2>
+                <p class="lead">Hi. I am a Back End web developer working in NodeJS and other related technologies. I also know a bit of
+                    Front End related technologies. I am aiming to be a Full Stack developer soon.
+                </p>
+
+            </div>
+            <div class="card card-body py-5">
+                <h2>My Skills</h2>
+                <p class="lead">NodeJS, ExpressJS, MongoDB, Mongoose , HTML5, CSS3, JavaScript, Bootstrap, jQuery, MySQL, Oracle 10g, Java,
+                    C++ etc.</p>
+                <hr>
+                <div class="mb-3">
+                    <h2>Core Skills</h2>
+                </div>
+                <h4>HTML5</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" role="progressbar" style="width:100%"></div>
+                </div>
+                <h4>CSS3</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" role="progressbar" style="width:90%"></div>
+                </div>
+                <h4>JavaScript</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" role="progressbar" style="width:85%"></div>
+                </div>
+                <h4>NodeJS</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" role="progressbar" style="width:95%"></div>
+                </div>
+                <h4>MongoDB</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" role="progressbar" style="width:95%"></div>
+                </div>
+            </div>
+        </div>
 
         <!-- RESUME -->
+        <div id="resume" class="collapse">
+            <div class="card card-body bg-success text-white py-5">
+                <h2>My Resume</h2>
+                <hr>
+                <div>
+                    <h4 class="text-warning">
+                        Education
+                    </h4>
+                    <p>
+                        <em>B.E in Computer Engineering (2013-2017)</em>
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-warning">
+                        College
+                    </h4>
+                    <p>
+                        <em>Sinhgad Academy of Engineering, Pune (2013-2017)</em>
+                    </p>
+                    <p>
+                        <em>Nowrosjee Wadia College, Pune (2011-2013)</em>
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-warning">
+                        School
+                    </h4>
+                    <p>
+                        <em>Sardar Dastur Hormazdiar High School, Pune (2001-2011)</em>
+                    </p>
+                </div>
+            </div>
+            <div class="card card-body py-5">
+                <h3>Where Have I Worked?</h3>
+                <p class="lead">Currently working at GigIndia. My previous company was Accenture.</p>
+
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Accenture</h4>
+                            <p class="card-text">Got trained in Oracle Apps. Responsible to design, develop and implement enhancements and customizations
+                                to the Oracle E-Business Suite (EBS) modules including Oracle Forms and Oracle Reports</p>
+                            <p class="p-2 mb-3 bg-dark text-white">Position: Application Development Associate</p>
+                            <p class="p-2 mb-3 bg-dark text-white">Phone: (+91) 9011252887</p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: Oct 2017 - May 2018</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">GigIndia</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, consequatur.</p>
+                            <p class="p-2 mb-3 bg-dark text-white">Position: Back End Developer</p>
+                            <p class="p-2 mb-3 bg-dark text-white">Phone: (+91) 9011252887</p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: May 2018 - Present</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <!-- WORK -->
+        <div id="work" class="collapse">
+            <div class="card card-body bg-warning text-white py-5">
+                <h2>My Portfolio</h2>
+                <p class="lead">Hard-working web developer with a flair for creating elegant solutions in the least amount of time. Developed
+                    a social StoryBook webapp, Camping webapp, Real Time Chat App, and lots of other projects. Passionate
+                    about web development and artificial intelligence in web.</p>
+            </div>
+            <div class="card card-body py-5">
+                <h3>What Have I Built?</h3>
+                <p class="lead">I have built a lot of projects. Some of them are shown below. Click on the images below to view it and visit
+                    the website.</p>
+
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <a href="img/storybooks.jpg" data-toggle="lightbox" data-title="StoryBooks App <a href='https://immense-mesa-29385.herokuapp.com/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
+                            <img src="img/storybooks.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/chatapp.jpg" data-toggle="lightbox" data-title="ChatApp <a href='https://aqueous-basin-47580.herokuapp.com/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
+                            <img src="img/chatapp.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/yelpcamp.jpg" data-toggle="lightbox" data-title="YelpCamp <a href='https://gentle-falls-84802.herokuapp.com/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
+                            <img src="img/yelpcamp.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <a href="img/vidjot.jpg" data-toggle="lightbox" data-title="VidJot <a href='https://secret-hollows-82954.herokuapp.com/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
+                            <img src="img/vidjot.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/colorgame.jpg" data-toggle="lightbox" data-title="ColorGame. Guess Color of specified RGB. <a href='https://zeeshantamboli.github.io/Color-Game-Project/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
+                            <img src="img/colorgame.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/todo.jpg" data-toggle="lightbox">
+                            <img id="todo" src="img/todo.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
         <!-- CONTACT -->
+        <div id="contact" class="collapse">
+            <div class="card card-body bg-danger text-white py-5">
+                <h2>Contact</h2>
+                <br>
+                <div>
+                    <i class="fa fa-phone"></i> - (+91) 9011252887
+                </div>
+                <br>
+                <div>
+                    <i class="fa fa-envelope"></i> - zeeshan.tamboli@gmail.com
+                </div>
+            </div>
+            <div class="card card-body py-5">
+                <h3>Get in touch</h3>
+                <p class="lead">Want to contact me? Submit your details below.</p>
+                <form>
+                    <div class="form-group">
+                        <div class="input-group mb-2 input-group-lg">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-danger text-white">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group mb-2 input-group-lg">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-danger text-white">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                            </div>
+                            <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group mb-2 input-group-lg">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-danger text-white">
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                            </div>
+                            <textarea rows="5" class="form-control bg-dark text-white" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-danger btn-block btn-lg" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer id="main-footer" class="p-5 bg-dark text-white mb-2">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#" download="" class="btn btn-outline-secondary text-white">
+                        <i class="fa fa-cloud"></i> Download My Resume
+                    </a>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script>
+        //Flexbox Name Resize
         $(window).on('resize', function () {
             const win = $(this);
             if (win.width() < 768) {
@@ -92,6 +315,17 @@
             } else {
                 $('#123').removeClass('display-5').addClass('display-4');
             }
+        });
+
+        //Hide when click
+        $('.port-item').click(function () {
+            $('.collapse').collapse('hide');
+        });
+
+        //Lightbox
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
         });
     </script>
 </body>

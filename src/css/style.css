@@ -2,6 +2,10 @@
   background: #000;
   color: white; }
 
+#todo {
+  width: 600px;
+  height: 178px; }
+
 #main-header img {
   width: 100%;
   height: 100%; }
