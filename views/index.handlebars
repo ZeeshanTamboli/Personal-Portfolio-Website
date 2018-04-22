@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="src/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <link rel="stylesheet" href="src/css/lightbox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Zeeshan Tamboli</title>
 </head>
 
 <body>
     <div class="container">
+        {{#if success_msg}}
+        <div class="alert alert-success mb-5">
+            <h4 class="alert-heading">{{success_msg}}</h4>
+        </div>
+        {{/if}}
         <header id="main-header">
             <div class="row no-gutters">
                 <div class="col-lg-4 col-md-5 col-sm-12">
-                    <img src="img/myself.jpg">
+                    <img src="src/img/myself.jpg">
                 </div>
                 <div class="col-lg-8 col-md-7 col-sm-12">
                     <div class="d-flex flex-column">
@@ -196,35 +201,35 @@
 
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <a href="img/storybooks.jpg" data-toggle="lightbox" data-title="StoryBooks App <a href='https://immense-mesa-29385.herokuapp.com/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
-                            <img src="img/storybooks.jpg" class="img-fluid">
+                        <a href="src/img/storybooks.jpg" data-toggle="lightbox" data-title="StoryBooks App <a href='https://immense-mesa-29385.herokuapp.com/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
+                            <img src="src/img/storybooks.jpg" class="img-fluid">
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="img/chatapp.jpg" data-toggle="lightbox" data-title="ChatApp <a href='https://aqueous-basin-47580.herokuapp.com/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
-                            <img src="img/chatapp.jpg" class="img-fluid">
+                        <a href="src/img/chatapp.jpg" data-toggle="lightbox" data-title="ChatApp <a href='https://aqueous-basin-47580.herokuapp.com/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
+                            <img src="src/img/chatapp.jpg" class="img-fluid">
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="img/yelpcamp.jpg" data-toggle="lightbox" data-title="YelpCamp <a href='https://gentle-falls-84802.herokuapp.com/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
-                            <img src="img/yelpcamp.jpg" class="img-fluid">
+                        <a href="src/img/yelpcamp.jpg" data-toggle="lightbox" data-title="YelpCamp <a href='https://gentle-falls-84802.herokuapp.com/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
+                            <img src="src/img/yelpcamp.jpg" class="img-fluid">
                         </a>
                     </div>
                 </div>
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <a href="img/vidjot.jpg" data-toggle="lightbox" data-title="VidJot <a href='https://secret-hollows-82954.herokuapp.com/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
-                            <img src="img/vidjot.jpg" class="img-fluid">
+                        <a href="src/img/vidjot.jpg" data-toggle="lightbox" data-title="VidJot <a href='https://secret-hollows-82954.herokuapp.com/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
+                            <img src="src/img/vidjot.jpg" class="img-fluid">
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="img/colorgame.jpg" data-toggle="lightbox" data-title="ColorGame. Guess Color of specified RGB. <a href='https://zeeshantamboli.github.io/Color-Game-Project/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
-                            <img src="img/colorgame.jpg" class="img-fluid">
+                        <a href="src/img/colorgame.jpg" data-toggle="lightbox" data-title="ColorGame. Guess Color of specified RGB. <a href='https://zeeshantamboli.github.io/Color-Game-Project/' target='_blank'><button class='btn btn-primary'>Visit Site</button></a>">
+                            <img src="src/img/colorgame.jpg" class="img-fluid">
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="img/todo.jpg" data-toggle="lightbox">
-                            <img id="todo" src="img/todo.jpg" class="img-fluid">
+                        <a href="src/img/todo.jpg" data-toggle="lightbox">
+                            <img id="todo" src="src/img/todo.jpg" class="img-fluid">
                         </a>
                     </div>
                 </div>
@@ -248,8 +253,8 @@
             </div>
             <div class="card card-body py-5">
                 <h3>Get in touch</h3>
-                <p class="lead">Want to contact me? Submit your details below.</p>
-                <form>
+                <p class="lead">Need a web project to be done or anything else? Contact me by submitting your details below.</p>
+                <form method="POST" action="/send">
                     <div class="form-group">
                         <div class="input-group mb-2 input-group-lg">
                             <div class="input-group-prepend">
@@ -257,7 +262,7 @@
                                     <i class="fa fa-user"></i>
                                 </div>
                             </div>
-                            <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+                            <input type="text" class="form-control bg-dark text-white" placeholder="Name" name="name" required>
                         </div>
                     </div>
 
@@ -268,7 +273,18 @@
                                     <i class="fa fa-envelope"></i>
                                 </div>
                             </div>
-                            <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+                            <input type="email" class="form-control bg-dark text-white" placeholder="Email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group mb-2 input-group-lg">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-danger text-white">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </div>
+                            <input type="tel" class="form-control bg-dark text-white" placeholder="Phone/Mobile Number" name="number" required>
                         </div>
                     </div>
 
@@ -279,9 +295,10 @@
                                     <i class="fa fa-pencil"></i>
                                 </div>
                             </div>
-                            <textarea rows="5" class="form-control bg-dark text-white" placeholder="Message"></textarea>
+                            <textarea rows="5" class="form-control bg-dark text-white" placeholder="Message" name="message" required></textarea>
                         </div>
                     </div>
+
                     <input type="submit" class="btn btn-danger btn-block btn-lg" value="Submit">
                 </form>
             </div>
@@ -299,10 +316,10 @@
         </footer>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/lightbox.js"></script>
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/tether.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/lightbox.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script>
         //Flexbox Name Resize
@@ -326,7 +343,7 @@
         $(document).on('click', '[data-toggle="lightbox"]', function (event) {
             event.preventDefault();
             $(this).ekkoLightbox();
-        });
+        }); 
     </script>
 </body>
 

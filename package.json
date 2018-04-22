@@ -4,13 +4,20 @@
   "description": "My peronal website built using Bootstrap 4 and NodeJS",
   "main": "app.js",
   "scripts": {
-    "start": "gulp"
+    "start": "node app.js",
+    "gulp": "gulp"
   },
   "author": "Zeeshan Tamboli",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "bootstrap": "^4.1.0",
-    "font-awesome": "^4.7.0"
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "font-awesome": "^4.7.0",
+    "nodemailer": "^4.6.4"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
