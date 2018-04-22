@@ -85,7 +85,10 @@ app.post('/send', (req, res) => {
     console.log('Message sent: %s', info.messageId);
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-    req.flash('success_msg', 'Your details have been sent successfully!');
+    req.flash(
+      'success_msg',
+      'Thank you for contacting me - I will get back to you soon!'
+    );
     res.redirect('/');
   });
 });
