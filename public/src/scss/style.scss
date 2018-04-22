@@ -3,6 +3,12 @@
   color: white;
 }
 
+input,
+textarea {
+  outline: none;
+  box-shadow: none !important;
+}
+
 #todo {
   width: 600px;
   height: 178px;
