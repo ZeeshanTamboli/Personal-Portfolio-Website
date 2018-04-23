@@ -7,13 +7,13 @@
 ## Install Dependencies
 
 ```bash
-npm install 
+npm install
 ```
 
 ## Run server
 
 ```bash
-npm start 
+npm start
 ```
 
 ## Compile Sass
@@ -22,4 +22,4 @@ npm start
 npm run gulp
 ```
 
-Files are compiled into public//src
+Files are compiled into public/src
