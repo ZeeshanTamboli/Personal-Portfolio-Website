@@ -1,8 +1,4 @@
-# Bootstrap 4 Starter Pack (BETA 4.0.0)
-
-Includes complete Bootstrap 4.0.0-beta dev environment with gulp and sass
-
-If you are looking for the alpha6 version [click here](https://github.com/bradtraversy/bs4starter_alpha6)
+# My Portfolio Website
 
 ### Version
 
@@ -14,10 +10,16 @@ If you are looking for the alpha6 version [click here](https://github.com/bradtr
 npm install 
 ```
 
-## Compile Sass & Run Dev Server
+## Run server
 
 ```bash
-npm start
+npm start 
 ```
 
-Files are compiled into /src
+## Compile Sass
+
+```bash
+npm run gulp
+```
+
+Files are compiled into public//src
