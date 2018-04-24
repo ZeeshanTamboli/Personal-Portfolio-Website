@@ -337,10 +337,7 @@
         NProgress.set(0.4);
         //Increment 
         var interval = setInterval(function () { NProgress.inc(); }, 1000);
-        $(document).ready(function () {
-            NProgress.done();
-            clearInterval(interval);
-        });
+
 
         //Flexbox Name Resize
         $(window).on('resize', function () {
@@ -363,7 +360,12 @@
         $(document).on('click', '[data-toggle="lightbox"]', function (event) {
             event.preventDefault();
             $(this).ekkoLightbox();
-        }); 
+        });
+
+        $(document).ready(function () {
+            NProgress.done();
+            clearInterval(interval);
+        });
     </script>
 </body>
 
