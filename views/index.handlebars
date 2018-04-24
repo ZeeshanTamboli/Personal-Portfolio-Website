@@ -4,6 +4,7 @@
 <head>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/nprogress.css">
     <link rel="stylesheet" href="src/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/bootstrap.css">
     <link rel="stylesheet" href="src/css/lightbox.css">
@@ -315,11 +316,9 @@
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <span class="float-right">
-                        <a href="#" class="btn btn-outline-secondary text-white">
-                            <i class="fa fa-eye"></i> View My Resume
-                        </a>
-                    </span>
+                    <a href="#" class="btn btn-outline-secondary text-white">
+                        <i class="fa fa-eye"></i> View My Resume
+                    </a>
                 </div>
             </div>
         </footer>
@@ -329,8 +328,15 @@
     <script src="src/js/tether.min.js"></script>
     <script src="src/js/bootstrap.min.js"></script>
     <script src="src/js/lightbox.js"></script>
+    <script src="src/js/nprogress.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script>
+        //NProgress
+
+        // Show the progress bar 
+        NProgress.start();
+        NProgress.done();
+
         //Flexbox Name Resize
         $(window).on('resize', function () {
             const win = $(this);
