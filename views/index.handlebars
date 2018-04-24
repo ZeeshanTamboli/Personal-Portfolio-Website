@@ -332,10 +332,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script>
         //NProgress
-
         // Show the progress bar 
         NProgress.start();
-        NProgress.done();
+        NProgress.set(0.4);
+        //Increment 
+        var interval = setInterval(function () { NProgress.inc(); }, 1000);
+        $(document).ready(function () {
+            NProgress.done();
+            clearInterval(interval);
+        });
 
         //Flexbox Name Resize
         $(window).on('resize', function () {
