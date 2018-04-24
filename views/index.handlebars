@@ -334,38 +334,33 @@
         //NProgress
         // Show the progress bar 
         NProgress.start();
-        NProgress.set(0.4);
-        //Increment 
-        var interval = setInterval(function () { NProgress.inc(); }, 1000);
 
-        $(document).ready(function () {
-            //Flexbox Name Resize
-            $(window).on('resize', function () {
-                const win = $(this);
-                if (win.width() < 768) {
+        //Flexbox Name Resize
+        $(window).on('resize', function () {
+            const win = $(this);
+            if (win.width() < 768) {
 
-                    $('#123').removeClass('display-4').addClass('display-5');
+                $('#123').removeClass('display-4').addClass('display-5');
 
-                } else {
-                    $('#123').removeClass('display-5').addClass('display-4');
-                }
-            });
-
-            //Hide when click
-            $('.port-item').click(function () {
-                $('.collapse').collapse('hide');
-            });
-
-            //Lightbox
-            $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
-
-
-            NProgress.done();
-            clearInterval(interval);
+            } else {
+                $('#123').removeClass('display-5').addClass('display-4');
+            }
         });
+
+        //Hide when click
+        $('.port-item').click(function () {
+            $('.collapse').collapse('hide');
+        });
+
+        //Lightbox
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+
+
+        NProgress.done();
+
     </script>
 </body>
 
